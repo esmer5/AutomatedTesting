@@ -10,7 +10,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace TestProject1
+namespace TestProject1.Features
 {
     using TechTalk.SpecFlow;
     using System;
@@ -40,7 +40,7 @@ namespace TestProject1
         public static void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "", "Login Form Validation", "  Verify different login behaviors of the SauceDemo login page", ProgrammingLanguage.CSharp, featureTags);
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Login Form Validation", null, ProgrammingLanguage.CSharp, featureTags);
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -88,7 +88,7 @@ namespace TestProject1
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("UC-1 - Login with empty credentials", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 5
+#line 4
   this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -98,14 +98,14 @@ namespace TestProject1
             else
             {
                 this.ScenarioStart();
+#line 5
+    testRunner.Given("the user is on the login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
 #line 6
-  testRunner.Given("the user navigates to the SauceDemo login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+    testRunner.When("the user clicks the login button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 7
-  testRunner.When("clicks the login button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 8
-  testRunner.Then("an error message \'Epic sadface: Username is required\' should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("an error message \'Epic sadface: Username is required\' should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -119,7 +119,7 @@ namespace TestProject1
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("UC-2 - Login with username only", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 10
+#line 9
   this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -129,17 +129,17 @@ namespace TestProject1
             else
             {
                 this.ScenarioStart();
+#line 10
+    testRunner.Given("the user is on the login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
 #line 11
-  testRunner.Given("the user navigates to the SauceDemo login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+    testRunner.When("the user enters \'standard_user\' as username and clears password", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 12
-  testRunner.When("the user enters \'standard_user\' as username and clears password", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+    testRunner.And("the user clicks the login button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 13
-  testRunner.And("clicks the login button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 14
-  testRunner.Then("an error message \'Epic sadface: Password is required\' should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+    testRunner.Then("an error message \'Epic sadface: Password is required\' should be displayed", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
@@ -156,7 +156,7 @@ namespace TestProject1
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             argumentsOfScenario.Add("username", username);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("UC-3 - Valid login", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 16
+#line 15
   this.ScenarioInitialize(scenarioInfo);
 #line hidden
             if ((TagHelper.ContainsIgnoreTag(tagsOfScenario) || TagHelper.ContainsIgnoreTag(featureTags)))
@@ -166,16 +166,16 @@ namespace TestProject1
             else
             {
                 this.ScenarioStart();
-#line 17
-    testRunner.Given("the user navigates to the SauceDemo login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 16
+    testRunner.Given("the user is on the login page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 18
+#line 17
     testRunner.When(string.Format("the user enters \'{0}\' as username and \'secret_sauce\' as password", username), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 19
-    testRunner.And("clicks the login button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 18
+    testRunner.And("the user clicks the login button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 20
+#line 19
     testRunner.Then("the user should see the title \'Swag Labs\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

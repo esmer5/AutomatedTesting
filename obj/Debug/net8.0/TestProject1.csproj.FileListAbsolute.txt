@@ -109,6 +109,7 @@ D:\Nueva carpeta\TEST .NET\TestProject1\obj\Debug\net8.0\TestProject1.GeneratedM
 D:\Nueva carpeta\TEST .NET\TestProject1\obj\Debug\net8.0\TestProject1.AssemblyInfoInputs.cache
 D:\Nueva carpeta\TEST .NET\TestProject1\obj\Debug\net8.0\TestProject1.AssemblyInfo.cs
 D:\Nueva carpeta\TEST .NET\TestProject1\obj\Debug\net8.0\TestProject1.csproj.CoreCompileInputs.cache
+D:\Nueva carpeta\TEST .NET\TestProject1\obj\Debug\net8.0\TestProject1.sourcelink.json
 D:\Nueva carpeta\TEST .NET\TestProject1\obj\Debug\net8.0\TestProj.494AA513.Up2Date
 D:\Nueva carpeta\TEST .NET\TestProject1\obj\Debug\net8.0\TestProject1.dll
 D:\Nueva carpeta\TEST .NET\TestProject1\obj\Debug\net8.0\refint\TestProject1.dll
